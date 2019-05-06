@@ -77,7 +77,7 @@
                   $rtn = shell_exec('ping -6 -c 5 '.$ip.'');
                   break;
                  case "traceroute":
-                  $rtn = shell_exec('traceroute -m 30 '.$ip.'');
+                  $rtn = shell_exec('traceroute -4 -m 30 '.$ip.'');
                   break;
                  case "traceroute6":
                   $rtn = shell_exec('traceroute -6 -m 30 '.$ip.'');
